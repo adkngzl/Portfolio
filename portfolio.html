@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Angel Adhikari</title>
+  <meta name="description" content="GIS, remote sensing, LiDAR, 3D GIS, and digital twin portfolio projects by Angel Adhikari, Ph.D." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Angel Adhikari, Ph.D.</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Map Timeline</a>
+      <a href="portfolio.html" class="active">Portfolio</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <p class="eyebrow">Portfolio</p>
+      <h1>Selected GIS, Remote Sensing, and 3D Visualization Projects</h1>
+      <p class="lead narrow">
+        Public-safe summaries of research and applied geospatial workflows. Replace placeholder images
+        with screenshots, maps, diagrams, or short GIFs from your own work.
+      </p>
+    </section>
+
+    <section class="project-detail-list">
+      <article class="project-detail" id="understory">
+        <div class="project-media placeholder-media">TLS / LiDAR Figure</div>
+        <div>
+          <p class="project-tag">Remote Sensing Research</p>
+          <h2>LiDAR-Based Understory Biomass Estimation</h2>
+          <p>
+            Developed terrestrial laser scanning workflows to quantify understory vegetation structure
+            and biomass in plantation forests. The work integrates field measurements, point-cloud
+            processing, voxel/height metrics, model development, validation, and spatial prediction.
+          </p>
+          <ul class="pill-list">
+            <li>TLS</li><li>Point clouds</li><li>Biomass modeling</li><li>R/Python</li><li>Forest structure</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project-detail" id="uav-lidar">
+        <div class="project-media placeholder-media">UAV / Aerial LiDAR Map</div>
+        <div>
+          <p class="project-tag">Remote Sensing Workflow</p>
+          <h2>UAV and Aerial LiDAR Forest Structure Mapping</h2>
+          <p>
+            Applied UAV and aerial LiDAR data to estimate structural metrics, normalize point clouds using
+            terrain models, and explore pathways for scaling plot-level field measurements to broader
+            forest mapping applications.
+          </p>
+          <ul class="pill-list">
+            <li>UAV LiDAR</li><li>Aerial LiDAR</li><li>DTM normalization</li><li>Spatial modeling</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project-detail" id="nyc-3d">
+        <div class="project-media placeholder-media">3D GIS / Digital Twin</div>
+        <div>
+          <p class="project-tag">Applied 3D GIS</p>
+          <h2>NYC 3D Condo and Digital Twin GIS Workflow</h2>
+          <p>
+            Built applied geospatial automation workflows for converting complex floorplan and property
+            datasets into structured 2D/3D GIS outputs. The work includes georeferenced PDF processing,
+            texture generation, unit-level attribution, ArcGIS integration, and QA/QC workflows.
+          </p>
+          <ul class="pill-list">
+            <li>Python</li><li>ArcGIS</li><li>GLB</li><li>Georeferenced PDFs</li><li>QA/QC</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="project-detail" id="viewshade">
+        <div class="project-media placeholder-media">Three.js Viewshade Demo</div>
+        <div>
+          <p class="project-tag">Interactive 3D Visualization</p>
+          <h2>Interactive 3D Viewshade and Window-Level Visibility Analysis</h2>
+          <p>
+            Developed concepts for browser-based 3D visibility analysis, ray casting, sun/shadow
+            simulation, and window-level view scoring. The public page should use synthetic data and
+            simplified logic; keep production code and confidential data private.
+          </p>
+          <ul class="pill-list">
+            <li>Three.js</li><li>WebGL</li><li>Ray casting</li><li>3D GIS</li><li>Urban visibility</li>
+          </ul>
+          <a class="btn small" href="demos/viewshade/" target="_blank" rel="noopener">Launch simplified public demo</a>
+        </div>
+      </article>
+
+      <article class="project-detail" id="dashboards">
+        <div class="project-media placeholder-media">Dashboard Screenshot</div>
+        <div>
+          <p class="project-tag">GIS Automation</p>
+          <h2>Interactive GIS Dashboards and Streamlit Tools</h2>
+          <p>
+            Built interactive geospatial dashboards and tools for project tracking, spatial data review,
+            raster/vector processing, PDF-to-GIS workflows, and stakeholder-facing visualization.
+          </p>
+          <ul class="pill-list">
+            <li>Streamlit</li><li>GeoPandas</li><li>Rasterio</li><li>Workflow tracking</li><li>Spatial QA</li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Angel Adhikari. Selected geospatial portfolio projects.</p>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

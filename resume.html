@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Map Timeline | Angel Adhikari</title>
+  <meta name="description" content="Map-based career timeline for Angel Adhikari, Ph.D. across Nepal, Japan, Georgia, and New York City." />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIINfQkMFe0bR2sW6vXY4ToPeETZtSHEoDk="
+    crossorigin=""
+  />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Angel Adhikari, Ph.D.</a>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="resume.html" class="active">Map Timeline</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="publications.html">Publications</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero compact">
+      <p class="eyebrow">Resume as Geography</p>
+      <h1>Map-Based Research, Education, and Career Timeline</h1>
+      <p class="lead narrow">
+        A geographic timeline showing how my path moved from forestry and GIS foundations in Nepal,
+        to remote sensing training in Japan, Ph.D. research in Georgia, and applied 3D GIS/digital twin
+        work in New York City.
+      </p>
+    </section>
+
+    <section class="timeline-layout">
+      <div class="map-panel">
+        <div id="career-map" aria-label="Map showing career timeline locations"></div>
+        <p class="map-caption">
+          Click a timeline card or map marker to focus each stage. Coordinates are editable in
+          <code>assets/js/timeline-map.js</code>.
+        </p>
+      </div>
+
+      <div class="timeline-panel">
+        <div class="timeline-header">
+          <p class="eyebrow">Timeline</p>
+          <h2>Education, research, and professional milestones</h2>
+        </div>
+        <div id="timeline-list" class="timeline-list"></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="resume-grid">
+        <article class="resume-block">
+          <h2>Technical Profile</h2>
+          <p>
+            GIS and remote sensing specialist with Ph.D.-level training in LiDAR, UAV/aerial/satellite
+            remote sensing, forest structure and biomass modeling, Python/R spatial workflows, and
+            applied 3D GIS visualization.
+          </p>
+        </article>
+        <article class="resume-block">
+          <h2>Core Methods</h2>
+          <ul class="pill-list">
+            <li>Terrestrial laser scanning</li>
+            <li>UAV LiDAR</li>
+            <li>Aerial LiDAR</li>
+            <li>Satellite remote sensing</li>
+            <li>Point-cloud metrics</li>
+            <li>DEM/DTM normalization</li>
+            <li>Python/R automation</li>
+            <li>ArcGIS / QGIS</li>
+            <li>Streamlit dashboards</li>
+            <li>Three.js visualization</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Angel Adhikari. Map-based geospatial career timeline.</p>
+  </footer>
+
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin="">
+  </script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/timeline-map.js"></script>
+</body>
+</html>
